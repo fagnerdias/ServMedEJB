@@ -19,7 +19,7 @@ public class Consultorio implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_CONSULTORIO")
     @Column(name = "id_Consultorio")
-	private int id;
+	private integer id;
     String nome;
     String endereco;
     String telefone;
@@ -60,4 +60,21 @@ public class Consultorio implements Serializable{
     public void setListMedicos(ArrayList<Medico> medicos){
         this.medicos = medicos;
     }
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public ArrayList<Medico> getMedicos() {
+		return medicos;
+	}
+
+	public void setMedicos(ArrayList<Medico> medicos) {
+		this.medicos = medicos;
+	}
+    
 }

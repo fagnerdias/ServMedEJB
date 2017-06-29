@@ -34,6 +34,9 @@ public class PacienteDao {
 		return paciente;
 	}	
 	
+	public Paciente searchByCpf(string cpf) {
+		Paciente paciente = manager.find(Paciente.class, cpf);
+	}
 	public Paciente editar(Paciente paciente){
 		try{
 			System.out.println("Paciente atualizada com sucesso!");

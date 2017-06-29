@@ -18,7 +18,7 @@ public class Cidade implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_CIDADE")
 	@Column(name="id_cidade")
-	private int id;
+	private Integer id;
     private String nome;
     
     
@@ -45,7 +45,7 @@ public class Cidade implements Serializable {
         this.regioes = regioes;
     }
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 

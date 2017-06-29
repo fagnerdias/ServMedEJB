@@ -35,6 +35,11 @@ public class MedicoDao {
 		return medico;
 	}
 	
+	public Medico searchByCrm(String crm) {
+		Medico medico = manager.find(Medico.class, crm);
+		return medico;
+	}
+	
 	public Medico editar(Medico medico){
 		try{
 			System.out.println("medico atualizada com sucesso!");

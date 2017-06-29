@@ -11,7 +11,6 @@ import javax.persistence.SequenceGenerator;
 @Entity
 public class Paciente extends Pessoa implements Serializable{
 	@Column(name = "id_Paciente")
-	private int id;
 	String plano;
 
 	public Paciente(){

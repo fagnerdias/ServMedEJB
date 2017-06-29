@@ -17,6 +17,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 public class Consulta implements Serializable{
 	
+	Integer id;
     Consultorio local;
     Medico medico;
     Paciente paciente;
@@ -75,6 +76,14 @@ public class Consulta implements Serializable{
 
 	public void setAgendada(boolean agendada) {
 		this.agendada = agendada;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
     
