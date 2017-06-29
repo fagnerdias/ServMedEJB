@@ -2,12 +2,11 @@ package interfaces;
 
 import javax.ejb.Local;
 
+import modelo.Consultorio;
 import modelo.Medico;
+import modelo.Paciente;
 
 @Local
 public interface IMedico {
-	void adicionarMedico(Medico medico);
-	void removerMedico(Medico medico);
-	void listarMedico();
-	void atualizarMedico(Medico medico);
+	void iniciarConsulta(Paciente paciente, Consultorio consultorio);
 }

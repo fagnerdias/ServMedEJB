@@ -4,15 +4,10 @@ import javax.ejb.Local;
 
 import modelo.Consultorio;
 import modelo.Medico;
+import modelo.Paciente;
 
 @Local
 public interface IConsultorio {
 	
-	void adicionarConsultorio(Consultorio consultorio);
-	void adicionarMedico(Medico medico);
-	void listarMedicos();
-	void removerMedico();
-	void removerConsultorio(Consultorio consultorio);
-	void atualizarConsultorio(Consultorio consultorio);
-
+	void marcarConsulta(Consultorio consultorio, Medico medico, Paciente paciente);
 }

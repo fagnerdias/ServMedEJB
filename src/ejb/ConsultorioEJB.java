@@ -3,44 +3,15 @@ package ejb;
 import interfaces.IConsultorio;
 import modelo.Consultorio;
 import modelo.Medico;
+import modelo.Paciente;
 
 public class ConsultorioEJB implements IConsultorio{
 
 	@Override
-	public void adicionarConsultorio(Consultorio consultorio) {
+	public void marcarConsulta(Consultorio consultorio, Medico medico, Paciente paciente) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void adicionarMedico(Medico medico) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void listarMedicos() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void removerMedico() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void removerConsultorio(Consultorio consultorio) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void atualizarConsultorio(Consultorio consultorio) {
-		// TODO Auto-generated method stub
-		
-	}
-
-		
+			
 }
